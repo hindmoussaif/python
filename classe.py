@@ -120,43 +120,43 @@
 # test.afficher() #pour appeler la methode on met nomdeclass.nomdemethode
 
 #_____________________________les methodes de conteneur____________________________________________________________________
-# class Dicto:
-#     """notre class va enveloper des dictionnaires"""
-#     def __init__(self):
-#         """ce constructeur n'aura pas de paramétres"""
-#         self._dictionnaire={}
-#     def __getitem__(self,index):
-#         """cette fonction special nous permet d'acceder à self._dictionnaire[index] en tapant objet[index]"""
-#         return self._dictionnaire[index]
-#     def __setitem__(self,index,value):
-#         """cette methode est appeler quan on ecrit objet[index]=value pour retournet self._dictionnaire[index]=value"""
-#         self._dictionnaire[index]=value
-#     def __contains__(self,value):
-#         """ cette fonction permet de personaliser le renvois de (in) """
-#         a= value in self._dictionnaire.values() 
-#         b= value in self._dictionnaire.keys() 
-#         if a==True and b==True:
-#             print('le nbr {} existe dans les valeurs et les clés !!  '. format(value))
-#         elif a==True and b==False:
-#             print("le nbr {} existe, c est une valeur du dictionnaire".format(value))
-#         elif b==True and a==False:
-#             print("la nbr {} n\'existe pas dans les valeur,mais il existe dans les clé du dictionnaire  ".format(value))
-#         else:
-#             print("le nbr {} n\'existe ni dans les valeurs ni dans les clés ".format(value))
-#     def __len__(self):
-#         print("la longueur de votre objet est  ")
-#         return len(self._dictionnaire)
+class Dicto:
+    """notre class va enveloper des dictionnaires"""
+    def __init__(self):
+        """ce constructeur n'aura pas de paramétres"""
+        self._dictionnaire={}
+    def __getitem__(self,index):
+        """cette fonction special nous permet d'acceder à self._dictionnaire[index] en tapant objet[index]"""
+        return self._dictionnaire[index]
+    def __setitem__(self,index,value):
+        """cette methode est appeler quan on ecrit objet[index]=value pour retournet self._dictionnaire[index]=value"""
+        self._dictionnaire[index]=value
+    def __contains__(self,value):
+        """ cette fonction permet de personaliser le renvois de (in) """
+        a= value in self._dictionnaire.values() 
+        b= value in self._dictionnaire.keys() 
+        if a==True and b==True:
+            print('le nbr {} existe dans les valeurs et les clés !!  '. format(value))
+        elif a==True and b==False:
+            print("le nbr {} existe, c est une valeur du dictionnaire".format(value))
+        elif b==True and a==False:
+            print("la nbr {} n\'existe pas dans les valeur,mais il existe dans les clé du dictionnaire  ".format(value))
+        else:
+            print("le nbr {} n\'existe ni dans les valeurs ni dans les clés ".format(value))
+    def __len__(self):
+        print("la longueur de votre objet est  ")
+        return len(self._dictionnaire)
         
     
-# dic=Dicto()
-# dic[0]=10
-# dic[1]=20
-# dic[2]=25
-# dic[10]=30
-# 0 in dic
-# 10 in dic
-# 20 in dic
-# 40 in dic
+dic=Dicto()
+dic[0]=10
+dic[1]=20
+dic[2]=25
+dic[10]=30
+0 in dic
+10 in dic
+20 in dic
+40 in dic
 
 #______________________________________methodes mathématiques___________________________________________________________
 
