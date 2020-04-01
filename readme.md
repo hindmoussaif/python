@@ -1,2 +1,2 @@
-# test
-ce fichier est un test de GitHub
+# Start python 
+On this repository , I will put some small things in python
